@@ -17,17 +17,15 @@ export class BannerComponent {
       date: 'Du 02 décembre au 06 décembre 2024',
       location: 'Abidjan - Côte d’Ivoire',
       year: '2024',
-      description: 'Thème : Gestion des ressources naturelles et catastrophes',
+      description: 'THEME : GESTION DES RESSOURCES NATURELLES ET CATASTROPHES',
       aboutText: 'ABOUT OTIF',
       registerText: 'REGISTER HERE'
     },
     {
-      conference: 'AFRICAN SPACE  SOLUTION MARKET',
-      date: 'Du 02 décembre au 06 décembre 2024',
-      location: 'Abidjan - Côte d’Ivoire',
+      conference: 'L\'espace n\'est pas une option, mais une nécessité. La technologie spatiale est fondamentale pour les pays africains.',
       year: '2024',
-      description: 'Thème : Gestion des ressources naturelles et catastrophes',
-      aboutText: 'ABOUT OTIF',
+      description: 'THEME : GESTION DES RESSOURCES NATURELLES ET CATASTROPHES',
+       aboutText: 'ABOUT OTIF',
       registerText: 'REGISTER HERE'
     }
   ];
