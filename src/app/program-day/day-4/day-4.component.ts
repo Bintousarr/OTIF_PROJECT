@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { FooterComponent } from "../../shared/footer/footer.component";
 
 @Component({
-  selector: 'app-day-2',
+  selector: 'app-day-4',
   standalone: true,
   imports: [FooterComponent],
-  templateUrl: './day-2.component.html',
-  styleUrl: './day-2.component.scss'
+  templateUrl: './day-4.component.html',
+  styleUrl: './day-4.component.scss'
 })
-export class Day2Component {
+export class Day4Component {
 
 }

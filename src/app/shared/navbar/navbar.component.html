@@ -1,4 +1,4 @@
-<div class="bg-blue-500 text-white">
+<div class="bg-blue-500 text-white ">
   <div class="container mx-auto flex items-center justify-between py-4">
     <nav class="flex items-center space-x-4">
       <a [routerLink]="['/home']" class="hover:text-red-600">ACCUEIL</a>
@@ -8,15 +8,23 @@
         <div class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
           <a [routerLink]="['program']" class="block px-4 py-2 hover:bg-gray-200">Jour 1</a>
           <a [routerLink]="['day-2']" class="block px-4 py-2 hover:bg-gray-200">Jour 2</a>
-          <a [routerLink]="['/program', 3]" class="block px-4 py-2 hover:bg-gray-200">Jour 3</a>
-          <a [routerLink]="['/program', 4]" class="block px-4 py-2 hover:bg-gray-200">Jour 4</a>
-          <a [routerLink]="['/program', 5]" class="block px-4 py-2 hover:bg-gray-200">Jour 5</a>
+          <a [routerLink]="['day-3']" class="block px-4 py-2 hover:bg-gray-200">Jour 3</a>
+          <a [routerLink]="['day-4']" class="block px-4 py-2 hover:bg-gray-200">Jour 4</a>
+          <a [routerLink]="['day-5']" class="block px-4 py-2 hover:bg-gray-200">Jour 5</a>
         </div>
       </div>
       <span class="text-white">|</span>
-      <a href="#" class="hover:text-red-600">OTIF</a>
+      <div class="relative group">
+        <button class="hover:text-red-600 focus:outline-none" aria-haspopup="true" aria-expanded="false">OTIF</button>
+        <div class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+          <a [routerLink]="['sponsor-page']" class="block px-4 py-2 hover:bg-gray-200">Sponsors</a>
+          <a [routerLink]="['speaker']" class="block px-4 py-2 hover:bg-gray-200">Orateurs</a>
+          <a [routerLink]="['accomodation']" class="block px-4 py-2 hover:bg-gray-200">Accomodation</a>
+          <a [routerLink]="['accomodation']" class="block px-4 py-2 hover:bg-gray-200">A propos</a>
+        </div>
+      </div>
       <span class="text-white">|</span>
-      <a href="#" class="hover:text-red-600">CONTACTS</a>
+      <a [routerLink]="['contact']" class="hover:text-red-600">CONTACTS</a>
     </nav>
   </div>
 </div>
