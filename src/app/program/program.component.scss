@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+h1{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: xx-large;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    margin: 5%;
+    .info-event-container{
+        .informationOfEvent{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .days{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border: black solid 1px;
+                width: 20%;
+                height: 70%;
+                background-color: #edf3fe;
+                div{
+                    border: orange 1px solid;
+                    button{
+                        padding: 0 1rem;
+                        width: 100%;
+                        border: solid black 1px;
+                        border-radius:0.9rem;
+                        font-weight: bold;
+                        &:hover{
+                            background-color: blue;
+                            color: #fff;
+                            transition-duration: 1s;
+                        }
+
+                    }
+                }
+            }
+        }
+       
+    }
+    .container-specifique-shedule{
+        width: 100%;
+        height: 15rem;
+        border: 1px solid black;
+        padding: 1rem;
+        display: flex;
+        gap: 2rem;
+        .photo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 20%;
+            border: black solid 1px;
+            img{
+                width: 100%;
+                border-radius: 1.5rem;
+                height: 100%;
+            }
+        }
+        .info-event-hour-container{
+            border: solid 1px black;
+            height: 100%;
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            box-shadow:  0 0 0.2em rgb(0, 0, 0);
+            border-radius: 1.5rem;
+            .hours-container{
+                border: solid black 1px;
+                height: 100%;
+                width: 70%;
+                .hours-specific-container{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    div{
+                        border: 1px solid black;
+                        height: 20%;
+                    }
+                }
+            }
+            .tickets{
+                border: 1px solid black;
+                width: 25%;
+                height: 100%;
+                .buy-tickets_btn{
+                    border: 1px solid black;
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button{
+                        border: black solid;
+                        padding: 0 1rem;
+                        border-radius:0.9rem;
+                        font-weight: bold;
+                        &:hover{
+                            background-color: blue;
+                            color: #fff;
+                            transition-duration: 1s;
+                        }
+                    }
+                }
+                .speakers{
+                    border: 1px solid black;
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

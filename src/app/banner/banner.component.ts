@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CompteAReboursComponent } from "../compte-a-rebours/compte-a-rebours.component";
+import { KeynoteSpeakerComponent } from "../keynote-speaker/keynote-speaker.component";
+import { SponsorComponent } from '../sponsor/sponsor.component';
 
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [],
+  imports: [CompteAReboursComponent, KeynoteSpeakerComponent, SponsorComponent],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
   

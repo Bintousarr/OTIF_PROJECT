@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-      path: '',
+      path: 'home',
       loadComponent: () =>
         import('./main-application/components/home/home.component').then((x) => x.HomeComponent),
       children:[{
@@ -30,13 +30,13 @@ export const routes: Routes = [
           import('./web/sponsor-page/sponsor-page.component').then((c) => c.SponsorPageComponent)
       },
       {
-        path: 'home', loadComponent: () => 
+        path: 'banner', loadComponent: () => 
           import('./banner/banner.component').then((c) => c.BannerComponent)
       }
     ],
       },
       {
-        path: '**', redirectTo:'',pathMatch:'full'
+        path: '**', redirectTo:'home/banner',pathMatch:'full'
        
       }
 ];
