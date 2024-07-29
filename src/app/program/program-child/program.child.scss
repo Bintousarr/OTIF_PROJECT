@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+h1{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: xx-large;
+}
+.container-specifique-shedule{
+    width: 100%;
+    height: 17rem;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    .photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 20%;
+        img{
+            width: 100%;
+            border-radius: 1.5rem;
+            height: 100%;
+            box-shadow: 0 0 15em rgb(195, 211, 245);
+        }
+    }
+    .info-event-hour-container{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0 0 15em rgb(195, 211, 245);
+        border-radius: 1.5rem;
+        .hours-container{
+            height: 100%;
+            width: 70%;
+            .hours-specific-container{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .program-hour{
+                    height: 20%;
+                    .date-and-hours{
+                    border: 1px solid rgba(143, 143, 143, 0.452);
+                    width: 40%;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                    border-radius: 1em;
+                    }
+                }
+                .program-text{
+                    height: 50%;
+                }
+                .program-lieux{
+                    height: 20%;
+                }
+            }
+        }
+        .tickets{
+            width: 25%;
+            height: 100%;
+            .buy-tickets_btn{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    border: rgba(0, 0, 0, 0.175) solid 1px;
+                    padding: 0 1rem;
+                    border-radius:0.9rem;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: blue;
+                        color: #fff;
+                        transition-duration: 1s;
+                    }
+                }
+            }
+            .speakers{
+                width: 100%;
+                height: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                div{
+                    width: 20%;
+                    height: 40%;
+                    border: #3b82f6 solid;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
