@@ -3,16 +3,7 @@
     <nav class="flex items-center space-x-4">
       <a [routerLink]="['/home']" class="hover:text-red-600">ACCUEIL</a>
       <span class="text-white">|</span>
-      <div class="relative group">
-        <button class="hover:text-red-600 focus:outline-none" aria-haspopup="true" aria-expanded="false">PROGRAMME</button>
-        <div class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-          <a [routerLink]="['program']" class="block px-4 py-2 hover:bg-gray-200">Jour 1</a>
-          <a [routerLink]="['day-2']" class="block px-4 py-2 hover:bg-gray-200">Jour 2</a>
-          <a [routerLink]="['day-3']" class="block px-4 py-2 hover:bg-gray-200">Jour 3</a>
-          <a [routerLink]="['day-4']" class="block px-4 py-2 hover:bg-gray-200">Jour 4</a>
-          <a [routerLink]="['day-5']" class="block px-4 py-2 hover:bg-gray-200">Jour 5</a>
-        </div>
-      </div>
+      <a [routerLink]="['program']" class="hover:text-red-600">PROGRAMME</a>
       <span class="text-white">|</span>
       <div class="relative group">
         <button class="hover:text-red-600 focus:outline-none" aria-haspopup="true" aria-expanded="false">OTIF</button>

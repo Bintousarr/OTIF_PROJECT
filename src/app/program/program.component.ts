@@ -17,11 +17,12 @@ export class ProgramComponent {
 
   dataComponent : DataComponent[] = [
     {
-      photoUrl: '',
-      date:'02, dec, 2024',
-      hours:'',
-      label:'',
-      lieu:"",
+      photoUrl: '../../assets/evenement.png',
+      date:'02, Dec-2024',
+      hours:'10:00 – 12:00 ',
+      label:'ÉVÉNEMENT SOCIAL',
+      description:"DON SOCIAL",
+      lieu:"Abidjan, Côte d'Ivoire",
       orateur:"",
       orateurs: [
         {
@@ -31,11 +32,27 @@ export class ProgramComponent {
       ]
     },
     {
-      photoUrl: '',
-      date:'03, dec , 2024',
-      hours:'',
-      label:'',
-      lieu:"",
+      photoUrl: '../../assets/AFRICAN_UNION.png',
+      date:'02, Dec-2024',
+      hours:'14:00 – 16:00 ',
+      label:'ÉVÉNEMENT SOCIAL',
+      description:"CONFERENCE DANS UNE ECOLE",
+      lieu:"Abidjan, Côte d'Ivoire",
+      orateur:"",
+      orateurs: [
+        {
+          name: '',
+          photoUrl: ""
+        }
+      ]
+    },
+    {
+      photoUrl: '../../assets/espace.png',
+      date:'03, Dec-2024',
+      hours:'16:00 – 17:30 ',
+      label:'ÉVÉNEMENT SOCIAL',
+      description:"REUNION POUR LE CLUB D'AFFAIRES",
+      lieu:"Abidjan, Côte d'Ivoire",
       orateur:"",
       orateurs: [
         {

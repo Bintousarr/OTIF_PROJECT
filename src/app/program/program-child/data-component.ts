@@ -3,6 +3,7 @@ export interface DataComponent{
     date: string;
     hours: string;
     label: string;
+    description: string;
     lieu: string;
     orateur: string
     orateurs: Orateurs[]
