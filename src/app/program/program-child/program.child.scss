@@ -12,6 +12,14 @@ h1{
     padding: 1rem;
     display: flex;
     gap: 2rem;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari and Chrome */
+    -o-animation: fadein 3s;
+    /* Opera */  
+   animation-fill-mode: forwards;
     .photo{
         display: flex;
         align-items: center;
@@ -98,3 +106,13 @@ h1{
         }
     }
 }
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+   
+    to {
+      opacity: 1;
+    }
+  }
