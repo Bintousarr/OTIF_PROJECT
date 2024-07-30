@@ -56,8 +56,8 @@ export class ProgramComponent {
       orateur:"",
       orateurs: [
         {
-          name: '',
-          photoUrl: ""
+          name: 'ora',
+          photoUrl: "../../assets/espace.png"
         }
       ]
     }

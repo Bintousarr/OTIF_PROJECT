@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="info-event-container">
+      <div class="timetable"></div>
+      <div class="informationOfEvent">
+        <div class="shedule"><h1>Information de l'événement</h1> <br/> </div>
+        <div class="bg-blue-500 days">
+          <div class="days1"><button routerLink="program">Day 01</button></div>
+          <div class="days2"><button>Day 02</button></div>
+          <div class="days3"><button>Day 03</button></div>
+          <div class="days3"><button>Day 04</button></div>
+          <div class="days3"><button>Day 05</button></div>
+  
+        </div>
+      </div>
+    </div>
+    <hr>
+    @for (item of dataComponent; track $index) {
+      <app-child [dataComponent]="item"></app-child>
+    }
+  </div>
