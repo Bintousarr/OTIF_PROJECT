@@ -20,15 +20,15 @@ export class BannerComponent {
       location: 'Abidjan - Côte d’Ivoire',
       year: '2024',
       description: 'THEME : GESTION DES RESSOURCES NATURELLES ET CATASTROPHES',
-      aboutText: 'ABOUT OTIF',
-      registerText: 'REGISTER HERE'
+      aboutText: 'A PROPOS',
+      registerText: 'INSCRIVEZ-VOUS'
     },
     {
       conference: 'L\'espace n\'est pas une option, mais une nécessité. La technologie spatiale est fondamentale pour les pays africains.',
       year: '2024',
       description: 'THEME : GESTION DES RESSOURCES NATURELLES ET CATASTROPHES',
-       aboutText: 'ABOUT OTIF',
-      registerText: 'REGISTER HERE'
+       aboutText: 'A PROPOS',
+      registerText: 'INSCRIVEZ-VOUS'
     }
   ];
 

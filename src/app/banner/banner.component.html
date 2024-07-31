@@ -7,11 +7,11 @@
       <div class="flex items-center justify-center mt-4">
         <h2 class="text-6xl font-bold">{{ slides[currentIndex].year }}</h2>
         <div class="border-l-4 border-blue-500 h-16 mx-4"></div>
-        <p class="text-xl text-yellow-500">{{ slides[currentIndex].description }}</p>
+        <p class="text-xl text-red-400">{{ slides[currentIndex].description }}</p>
       </div>
       <div class="flex justify-center gap-4 mt-8">
-        <button class="bg-blue-500 text-white py-2 px-4 rounded">{{ slides[currentIndex].aboutText }}</button>
-        <button class="border-2 border-yellow-500 text-yellow-500 py-2 px-4 rounded">{{ slides[currentIndex].registerText }}</button>
+        <button class="bg-red-900 text-white py-2 px-4 rounded">{{ slides[currentIndex].aboutText }}</button>
+        <button class="border-2 border-red-900 text-red9500 py-2 px-4 rounded">{{ slides[currentIndex].registerText }}</button>
       </div>
     </div>
     <button (click)="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 p-2 rounded-full">

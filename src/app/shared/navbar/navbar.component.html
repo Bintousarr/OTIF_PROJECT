@@ -1,21 +1,21 @@
-<div class="bg-blue-900 text-white ">
+<div class="bg-blue-500 text-white ">
   <div class="container mx-auto flex items-center justify-between py-4">
     <nav class="flex items-center space-x-4">
-      <a [routerLink]="['/home']" class="hover:text-red-600">ACCUEIL</a>
+      <a [routerLink]="['/home/banner']" class="nav-item hover:text-red-600">ACCUEIL</a>
       <span class="text-white">|</span>
-      <a [routerLink]="['program']" class="hover:text-red-600">PROGRAMME</a>
+      <a [routerLink]="['program']" class="nav-item hover:text-red-600">PROGRAMME</a>
       <span class="text-white">|</span>
       <div class="relative group">
-        <button class="hover:text-red-600 focus:outline-none" aria-haspopup="true" aria-expanded="false">OTIF</button>
+        <button class="nav-item hover:text-red-600 focus:outline-none" aria-haspopup="true" aria-expanded="false">ASSM 2024</button>
         <div class="absolute left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
           <a [routerLink]="['sponsor-page']" class="block px-4 py-2 hover:bg-gray-200">Sponsors</a>
           <a [routerLink]="['orateur']" class="block px-4 py-2 hover:bg-gray-200">Orateurs</a>
           <a [routerLink]="['accomodation']" class="block px-4 py-2 hover:bg-gray-200">Accomodation</a>
-          <a [routerLink]="['accomodation']" class="block px-4 py-2 hover:bg-gray-200">A propos</a>
+          <a [routerLink]="['about']" class="block px-4 py-2 hover:bg-gray-200">À propos</a>
         </div>
       </div>
       <span class="text-white">|</span>
-      <a [routerLink]="['contact']" class="hover:text-red-600">CONTACT</a>
+      <a [routerLink]="['contact']" class="nav-item hover:text-red-600">CONTACT</a>
     </nav>
   </div>
 </div>

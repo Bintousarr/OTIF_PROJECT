@@ -11,6 +11,7 @@ import { OwlOptions, CarouselModule } from 'ngx-owl-carousel-o';
 })
 export class SponsorPageComponent {
 
+  
   customOptions: OwlOptions = {
     loop: true,
     margin: 10,

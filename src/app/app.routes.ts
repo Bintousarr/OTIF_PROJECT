@@ -12,10 +12,18 @@ export const routes: Routes = [
       {
         path: 'day2', loadComponent: () => 
           import('./days/day2/day2.component').then((c) => c.Day2Component)
-      },      
+      },     
+      {
+        path: 'day3', loadComponent: () => 
+          import('./days/day3/day3.component').then((c) => c.Day3Component)
+      }, 
       {
         path: 'sponsor-page', loadComponent: () => 
           import('./web/sponsor-page/sponsor-page.component').then((c) => c.SponsorPageComponent)
+      },      
+      {
+        path: 'register', loadComponent: () => 
+          import('./web/register/register.component').then((c) => c.RegisterComponent)
       },
       {
         path: 'orateur', loadComponent: () => 
