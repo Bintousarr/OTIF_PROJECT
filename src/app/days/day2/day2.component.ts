@@ -15,7 +15,7 @@ import { RouterLink } from '@angular/router';
 export class Day2Component {
   dataComponent : DataComponent[] = [
     {
-      photoUrl: '../../assets/dej.jpeg',
+      photoUrl: '../../assets/breakfast',
       date:'03, Dec-2024',
       hours:'09:00 - 10:00',
       label:'Cérémonie d\'ouvertures et Ressources Naturelles',
@@ -45,7 +45,7 @@ export class Day2Component {
       ]
     },
     {
-      photoUrl: '../../assets/dejeuner_entreprise.jpg',
+      photoUrl: '../../assets/lunch.jpg',
       date:'03, Dec-2024',
       hours:'12:15 - 14:00 ',
       label:'Cérémonie d\'ouvertures et Ressources Naturelles',
@@ -99,7 +99,7 @@ export class Day2Component {
       orateur:"",
       orateurs: [
         {
-          name: 'ora',
+          name: '',
           photoUrl: "../../assets/espace.png"
         }
       ]

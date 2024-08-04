@@ -8,6 +8,7 @@ import { SponsorComponent } from "./sponsor/sponsor.component";
 import { CompteAReboursComponent } from "./compte-a-rebours/compte-a-rebours.component";
 import { KeynoteSpeakerComponent } from "./keynote-speaker/keynote-speaker.component";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

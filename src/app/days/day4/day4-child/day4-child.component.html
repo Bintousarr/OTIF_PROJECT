@@ -1,0 +1,39 @@
+<div class="container-specifique-shedule">
+    <div class="photo rounded-md "><img [src]="dataComponent.photoUrl" alt=""></div>
+    <div class="info-event-hour-container">
+      <div class="hours-container">
+        <div class="ml-8 hours-specific-container">
+          <div class="mt-12  program-hour">
+            <div class="date-and-hours">
+              <span class="date flex justify-center items-center">
+                <i class="ml-2 text-blue-500 far fa-calendar-alt mr-2"></i>
+                {{dataComponent.date}}
+              </span>
+              <span class="hours flex justify-center items-center">
+                <i class="ml-2 text-blue-500 far fa-clock mr-2"></i>
+                {{dataComponent.hours}}
+              </span>
+            </div>
+          </div>
+          <div class="program-text mt-4"><h1>{{dataComponent.label}}</h1></div>
+          <div class="mb-6 program-lieux mt-4"><span>{{dataComponent.description}}</span></div>
+          <div class="mt-4 mb-8 flex items-center text-gray-600">
+            <i class="text-blue-500 fas fa-map-marker-alt mr-2"></i>
+            <span>Abdijan, Côte d'Ivoire</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tickets p-4 border-l flex flex-col items-center">
+        <div class="buy-tickets_btn">
+          <button>Orateur</button>
+        </div>
+        <div class="speakers">
+          <div class="spreaker1 space-x-2"><img src="../../assets/Sheri.jpeg" class="w-10 h-10 rounded-full" alt=""></div>
+          <div class="spreaker2"><img src="../../assets/image_irie_fabrice.png" class="w-10 h-10 rounded-full" alt=""></div>
+          <div class="spreaker3"><img src="../../assets/page_20_img_1.png" class="w-10 h-10 rounded-full" alt=""></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>

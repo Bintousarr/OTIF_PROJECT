@@ -16,6 +16,14 @@ export const routes: Routes = [
       {
         path: 'day3', loadComponent: () => 
           import('./days/day3/day3.component').then((c) => c.Day3Component)
+      },     
+      {
+        path: 'day4', loadComponent: () => 
+          import('./days/day4/day4.component').then((c) => c.Day4Component)
+      },     
+      {
+        path: 'day5', loadComponent: () => 
+          import('./days/day5/day5.component').then((c) => c.Day5Component)
       }, 
       {
         path: 'sponsor-page', loadComponent: () => 
@@ -28,6 +36,14 @@ export const routes: Routes = [
       {
         path: 'orateur', loadComponent: () => 
           import('./web/orateur/orateur.component').then((c) => c.OrateurComponent)
+      },
+      {
+        path: 'about', loadComponent: () => 
+          import('./web/about/about.component').then((c) => c.AboutComponent)
+      },
+      {
+        path: 'accomodation', loadComponent: () => 
+          import('./web/accomodation/accomodation.component').then((c) => c.AccomodationComponent)
       },
       {
         path: 'banner', loadComponent: () => 
