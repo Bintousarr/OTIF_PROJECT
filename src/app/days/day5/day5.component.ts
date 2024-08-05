@@ -14,21 +14,7 @@ export class Day5Component {
 
   
   dataComponent : DataComponent[] = [
-    {
-      photoUrl: '../../assets/breakfast',
-      date:'05, Dec-2024',
-      hours:'09:00 - 10:00',
-      label:'Clôture',
-      description:"Petit-déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: '',
-          photoUrl: ""
-        }
-      ]
-    },
+  
     {
       photoUrl: '../../assets/parole.jpg',
       date:'05, Dec-2024',
@@ -44,21 +30,7 @@ export class Day5Component {
         }
       ]
     },
-    {
-      photoUrl: '../../assets/lunch.jpg',
-      date:'05, Dec-2024',
-      hours:'12:15 - 14:00 ',
-      label:'Clôture',
-      description:"Déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: 'ora',
-          photoUrl: "../../assets/espace.png"
-        }
-      ]
-    }, 
+  
     {
       photoUrl: '../../assets/tourisme.png',
       date:'05, Dec-2024',

@@ -2,21 +2,27 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-      path: 'home',
+      path: 'banner',
       loadComponent: () =>
-        import('./main-application/components/home/home.component').then((x) => x.HomeComponent),
-      children:[{
+        import('./banner/banner.component').then((x) => x.BannerComponent),
+      children:[
+        
+        
+    
+    ],
+      },
+      {
         path: 'program', loadComponent: () => 
           import('./program/program.component').then((c) => c.ProgramComponent),
       },
       {
         path: 'day2', loadComponent: () => 
           import('./days/day2/day2.component').then((c) => c.Day2Component)
-      },     
+      },  
       {
         path: 'day3', loadComponent: () => 
           import('./days/day3/day3.component').then((c) => c.Day3Component)
-      },     
+      },    
       {
         path: 'day4', loadComponent: () => 
           import('./days/day4/day4.component').then((c) => c.Day4Component)
@@ -46,17 +52,16 @@ export const routes: Routes = [
           import('./web/accomodation/accomodation.component').then((c) => c.AccomodationComponent)
       },
       {
-        path: 'banner', loadComponent: () => 
-          import('./banner/banner.component').then((c) => c.BannerComponent)
-      },
-      {
         path: 'contact', loadComponent: () => 
           import('./web/contact/contact.component').then((c) => c.ContactComponent)
-      }
-    ],
       },
       {
-        path: '**', redirectTo:'home/banner',pathMatch:'full'
+        path: 'evenement', loadComponent: () => 
+          import('./web/evenement/evenement.component').then((c) => c.EvenementComponent)
+      },
+      
+      {
+        path: '**', redirectTo:'banner',pathMatch:'full'
        
       }
 ];

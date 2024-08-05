@@ -15,21 +15,7 @@ import { CompteAReboursComponent } from "../../compte-a-rebours/compte-a-rebours
 export class Day4Component {
 
   dataComponent : DataComponent[] = [
-    {
-      photoUrl: '../../assets/dej.jpeg',
-      date:'05, Dec-2024',
-      hours:'09:00 - 10:00',
-      label:'Sécurité & Défense',
-      description:"Petit-déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: '',
-          photoUrl: ""
-        }
-      ]
-    },
+    
     {
       photoUrl: '../../assets/defense.png',
       date:'05, Dec-2024',
@@ -42,21 +28,6 @@ export class Day4Component {
         {
           name: '',
           photoUrl: ""
-        }
-      ]
-    },
-    {
-      photoUrl: '../../assets/dejeuner_entreprise.jpg',
-      date:'05, Dec-2024',
-      hours:'12:15 - 14:00 ',
-      label:'Sécurité & Défense',
-      description:"Déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: 'ora',
-          photoUrl: "../../assets/espace.png"
         }
       ]
     }, 
@@ -75,21 +46,7 @@ export class Day4Component {
         }
       ]
     },
-    {
-      photoUrl: '../../assets/cafe.jpg',
-      date:'05, Dec-2024',
-      hours:'15:00 - 16:00',
-      label:'Sécurité & Défense',
-      description:"Pause café et Visite de stand",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: 'ora',
-          photoUrl: "../../assets/espace.png"
-        }
-      ]
-    },
+   
     {
       photoUrl: '../../assets/affaire.jpg',
       date:'05, Dec-2024',

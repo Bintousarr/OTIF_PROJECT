@@ -14,21 +14,7 @@ import { RouterLink } from '@angular/router';
 })
 export class Day2Component {
   dataComponent : DataComponent[] = [
-    {
-      photoUrl: '../../assets/breakfast',
-      date:'03, Dec-2024',
-      hours:'09:00 - 10:00',
-      label:'Cérémonie d\'ouvertures et Ressources Naturelles',
-      description:"Petit-déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: '',
-          photoUrl: ""
-        }
-      ]
-    },
+    
     {
       photoUrl: '../../assets/parole.jpg',
       date:'03, Dec-2024',
@@ -43,24 +29,9 @@ export class Day2Component {
           photoUrl: ""
         }
       ]
-    },
-    {
-      photoUrl: '../../assets/lunch.jpg',
-      date:'03, Dec-2024',
-      hours:'12:15 - 14:00 ',
-      label:'Cérémonie d\'ouvertures et Ressources Naturelles',
-      description:"Déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: 'ora',
-          photoUrl: "../../assets/espace.png"
-        }
-      ]
     }, 
     {
-      photoUrl: '../../assets/ges_fonciere.jpg',
+      photoUrl: '../../assets/club.jpg',
       date:'03, Dec-2024',
       hours:'14:00 - 15:30',
       label:'Cérémonie d\'ouvertures et Ressources Naturelles',
@@ -74,23 +45,9 @@ export class Day2Component {
         }
       ]
     },
+   
     {
-      photoUrl: '../../assets/stand.jpg',
-      date:'03, Dec-2024',
-      hours:'15:30 - 16:30',
-      label:'Cérémonie d\'ouvertures et Ressources Naturelles',
-      description:"Pause café et Visite de stand",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: 'ora',
-          photoUrl: "../../assets/espace.png"
-        }
-      ]
-    },
-    {
-      photoUrl: '../../assets/ges_fonciere.jpg',
+      photoUrl: '../../assets/evenement.png',
       date:'03, Dec-2024',
       hours:'16:30 - 17:30',
       label:'Cérémonie d\'ouvertures et Ressources Naturelles',

@@ -13,21 +13,7 @@ import { RouterLink } from '@angular/router';
 })
 export class Day3Component {
   dataComponent : DataComponent[] = [
-    {
-      photoUrl: '../../assets/dej.jpeg',
-      date:'04, Dec-2024',
-      hours:'09:00 - 10:00',
-      label:'Ressources Naturelles',
-      description:"Petit-déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: '',
-          photoUrl: ""
-        }
-      ]
-    },
+   
     {
       photoUrl: '../../assets/agriculture.jpeg',
       date:'04, Dec-2024',
@@ -42,21 +28,6 @@ export class Day3Component {
           photoUrl: ""
         }
       ]
-    },
-    {
-      photoUrl: '../../assets/dejeuner_entreprise.jpg',
-      date:'04, Dec-2024',
-      hours:'12:15 - 14:00 ',
-      label:'Ressources Naturelles',
-      description:"Déjeuner",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: 'ora',
-          photoUrl: "../../assets/espace.png"
-        }
-      ]
     }, 
     {
       photoUrl: '../../assets/inondation.jpg',
@@ -64,21 +35,6 @@ export class Day3Component {
       hours:'14:00 - 15:30',
       label:'Ressources Naturelles',
       description:"Session 5:  Solution spatiale pour les inondations",
-      lieu:"Abidjan, Côte d'Ivoire",
-      orateur:"",
-      orateurs: [
-        {
-          name: 'ora',
-          photoUrl: "../../assets/espace.png"
-        }
-      ]
-    },
-    {
-      photoUrl: '../../assets/cafe.jpg',
-      date:'04, Dec-2024',
-      hours:'15:30 - 16:30',
-      label:'Ressources Naturelles',
-      description:"Pause café et Visite de stand",
       lieu:"Abidjan, Côte d'Ivoire",
       orateur:"",
       orateurs: [

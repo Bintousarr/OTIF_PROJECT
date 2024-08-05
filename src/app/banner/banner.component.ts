@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { CompteAReboursComponent } from "../compte-a-rebours/compte-a-rebours.component";
 import { KeynoteSpeakerComponent } from "../keynote-speaker/keynote-speaker.component";
 import { SponsorComponent } from '../sponsor/sponsor.component';
+import { FooterComponent } from '../shared/footer/footer.component';
+import { EvenementComponent } from "../web/evenement/evenement.component";
 
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [CompteAReboursComponent, KeynoteSpeakerComponent, SponsorComponent],
+  imports: [CompteAReboursComponent, KeynoteSpeakerComponent, SponsorComponent, EvenementComponent],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
   
@@ -15,7 +17,7 @@ import { SponsorComponent } from '../sponsor/sponsor.component';
 export class BannerComponent {
   slides = [
     {
-      conference: 'AFRICAN SPACE  SOLUTION MARKET',
+      conference: ' Marché Africain des Solutions Spatiales (MASS) ',
       date: 'Du 02 décembre au 06 décembre 2024',
       location: 'Abidjan - Côte d’Ivoire',
       year: '2024',
