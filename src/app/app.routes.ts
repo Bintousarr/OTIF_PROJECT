@@ -59,6 +59,10 @@ export const routes: Routes = [
         path: 'evenement', loadComponent: () => 
           import('./web/evenement/evenement.component').then((c) => c.EvenementComponent)
       },
+      {
+        path: 'details', loadComponent: () => 
+          import('./web/details/details.component').then((c) => c.DetailsComponent)
+      },
       
       {
         path: '**', redirectTo:'banner',pathMatch:'full'

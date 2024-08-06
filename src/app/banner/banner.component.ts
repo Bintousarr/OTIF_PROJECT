@@ -4,12 +4,13 @@ import { KeynoteSpeakerComponent } from "../keynote-speaker/keynote-speaker.comp
 import { SponsorComponent } from '../sponsor/sponsor.component';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { EvenementComponent } from "../web/evenement/evenement.component";
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [CompteAReboursComponent, KeynoteSpeakerComponent, SponsorComponent, EvenementComponent],
+  imports: [CompteAReboursComponent, KeynoteSpeakerComponent, SponsorComponent, EvenementComponent, RouterLink],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
   
