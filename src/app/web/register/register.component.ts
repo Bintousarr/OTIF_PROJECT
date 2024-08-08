@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { RegisterService } from '../../services/register.service';
 
 
 @Component({
@@ -12,25 +13,31 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class RegisterComponent {
 
   registrationForm: FormGroup;
+  constructor(private fb: FormBuilder, private registerService: RegisterService){
 
-  constructor(private fb: FormBuilder) {
+
     this.registrationForm = this.fb.group({
-      title: ['Prof.', Validators.required],
-      name: ['', Validators.required],
-      gender: ['', Validators.required],
+      titre: ['', Validators.required],
+      prenom: ['', Validators.required],
+      nom: ['', Validators.required],
+      genre: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', Validators.required],
-      country: ['', Validators.required],
-      participationType: ['Sponsor', Validators.required]
+      telephone: ['', Validators.required],
+      pays: ['', Validators.required],
+      participation: ['', Validators.required]
     });
   }
 
   onSubmit() {
     if (this.registrationForm.valid) {
-      console.log(this.registrationForm.value);
-   
-    } else {
-      console.log('Le formulaire n\'est pas valide');
+      this.registerService.register(this.registrationForm.value).subscribe(
+        response => {
+          console.log('Inscription réussie !', response);
+        },
+        error => {
+          console.error('Erreur lors de l\'inscription', error);
+        }
+      );
     }
   }
 }

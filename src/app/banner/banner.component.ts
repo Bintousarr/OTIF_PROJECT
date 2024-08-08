@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription, interval } from 'rxjs';
 import { CompteAReboursComponent } from "../compte-a-rebours/compte-a-rebours.component";
 import { KeynoteSpeakerComponent } from "../keynote-speaker/keynote-speaker.component";
 import { SponsorComponent } from '../sponsor/sponsor.component';
@@ -6,36 +7,53 @@ import { FooterComponent } from '../shared/footer/footer.component';
 import { EvenementComponent } from "../web/evenement/evenement.component";
 import { RouterLink } from '@angular/router';
 
-
 @Component({
   selector: 'app-banner',
   standalone: true,
   imports: [CompteAReboursComponent, KeynoteSpeakerComponent, SponsorComponent, EvenementComponent, RouterLink],
   templateUrl: './banner.component.html',
-  styleUrl: './banner.component.scss',
-  
+  styleUrls: ['./banner.component.scss'],
 })
-export class BannerComponent {
+export class BannerComponent implements OnInit, OnDestroy {
   slides = [
     {
-      conference: ' Marché Africain des Solutions Spatiales (MASS) ',
+      conference: 'Marché Africain des Solutions Spatiales (MASS)',
       date: 'Du 02 décembre au 06 décembre 2024',
       location: 'Abidjan - Côte d’Ivoire',
       year: '2024',
       description: 'THEME : GESTION DES RESSOURCES NATURELLES ET CATASTROPHES',
       aboutText: 'A PROPOS',
-      registerText: 'INSCRIVEZ-VOUS'
+      registerText: 'INSCRIVEZ-VOUS',
+      image: '../../../assets/slide.jpeg'
     },
     {
       conference: 'L\'espace n\'est pas une option, mais une nécessité. La technologie spatiale est fondamentale pour les pays africains.',
       year: '2024',
       description: 'THEME : GESTION DES RESSOURCES NATURELLES ET CATASTROPHES',
-       aboutText: 'A PROPOS',
-      registerText: 'INSCRIVEZ-VOUS'
+      aboutText: 'A PROPOS',
+      registerText: 'INSCRIVEZ-VOUS',
+      image: '../../../assets/page_2_img_1.png'
     }
   ];
 
   currentIndex = 0;
+  slideInterval: Subscription | undefined;
+
+  ngOnInit() {
+    this.startSlideShow();
+  }
+
+  ngOnDestroy() {
+    if (this.slideInterval) {
+      this.slideInterval.unsubscribe();
+    }
+  }
+
+  startSlideShow() {
+    this.slideInterval = interval(3000).subscribe(() => {
+      this.nextSlide();
+    });
+  }
 
   prevSlide() {
     this.currentIndex = (this.currentIndex === 0) ? this.slides.length - 1 : this.currentIndex - 1;
@@ -44,8 +62,4 @@ export class BannerComponent {
   nextSlide() {
     this.currentIndex = (this.currentIndex === this.slides.length - 1) ? 0 : this.currentIndex + 1;
   }
-
 }
-
- 
-

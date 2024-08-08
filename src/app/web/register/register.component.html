@@ -2,7 +2,7 @@
   <div class="w-1/2 bg-white flex flex-col justify-center items-center">
       <div class="w-2/3">
           <h1 class="mt-2 mb-8 text-2xl font-bold animate-fade-in-up">Remplissez le formulaire pour réserver votre place.</h1>
-          <form>
+          <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
               <div class="mb-4">
                   <label class="block mb-2 text-sm font-medium text-gray-700 animate-fade-in-up">Sélectionnez votre titre</label>
                   <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 transition-transform duration-300 ease-in-out hover:scale-105">
@@ -14,14 +14,23 @@
                   </select>
               </div>
               <div class="mb-4">
-                  <label class="block mb-2 text-sm font-medium text-gray-700 animate-fade-in-up">Prénom et nom</label>
+                  <label class="block mb-2 text-sm font-medium text-gray-700 animate-fade-in-up">Prénom</label>
                   <div class="relative">
                       <span class="absolute inset-y-0 left-0 flex items-center pl-3">
                           <i class="fas fa-user text-gray-500"></i>
                       </span>
-                      <input type="text" placeholder="Prénom et nom" class="pl-10 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 transition-transform duration-300 ease-in-out hover:scale-105">
+                      <input type="text" placeholder="Prénom" class="pl-10 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 transition-transform duration-300 ease-in-out hover:scale-105">
                   </div>
               </div>
+              <div class="mb-4">
+                <label class="block mb-2 text-sm font-medium text-gray-700 animate-fade-in-up">Nom</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                        <i class="fas fa-user text-gray-500"></i>
+                    </span>
+                    <input type="text" placeholder="Nom" class="pl-10 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 transition-transform duration-300 ease-in-out hover:scale-105">
+                </div>
+            </div>
               <div class="mb-4">
                   <label class="block mb-2 text-sm font-medium text-gray-700 animate-fade-in-up">Genre</label>
                   <div class="flex items-center">
